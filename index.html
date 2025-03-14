@@ -2,25 +2,23 @@
 <html>
 <head>
   <title>Blocked: https://slowroads.io</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <iframe id="gameFrame" src="https://slowroads.io/" name="test" height="500" width="800">IXL.</iframe>   
-  <br>
-  <button onclick="toggleFullScreen()">Fullscreen</button>
-
-  <script>
-    function toggleFullScreen() {
-      const iframe = document.getElementById('gameFrame');
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-      } else if (iframe.mozRequestFullScreen) { // Firefox
-        iframe.mozRequestFullScreen();
-      } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) { // IE/Edge
-        iframe.msRequestFullscreen();
-      }
-    }
-  </script>
+  <iframe src="https://slowroads.io/" name="test">IXL.</iframe>   
 </body>
 </html>
